@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plant_app/main_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,23 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Color.fromRGBO(61, 88, 79, 1),
       ),
-      home: MainScreen(),
-    );
-  }
-}
-
-class MainScreen extends StatelessWidget {
-  const MainScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      body: const Center(
-        child: Text('Main Screen'),
-      ),
+      home: const MainScreen(),
     );
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'package:plant_app/sign_in_page.dart';
 
+
 class SignUpPage extends StatefulWidget {
   // const SignUpPage({Key? key, required this.title}) : super(key: key);
 
@@ -178,7 +179,8 @@ class _SignUpPageState extends State<SignUpPage> {
           filled: true,
           border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15),
-              borderSide: const BorderSide(width: 0, style: BorderStyle.none)),
+              borderSide: const BorderSide(
+                  width: 0, style: BorderStyle.none)),
           labelText: hintText,
         ),
       ),

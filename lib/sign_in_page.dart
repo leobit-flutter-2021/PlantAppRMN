@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:plant_app/sign_up_page.dart';
 
 class SignInPage extends StatefulWidget {
   const SignInPage({Key? key}) : super(key: key);
@@ -156,7 +157,15 @@ class _SignInPageState extends State<SignInPage> {
                           children: [
                             const Text("Don't have an account?"),
                             TextButton(
-                                onPressed: () {}, child: const Text('Sign up'))
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) {
+                                      return SignUpPage();
+                                    }),
+                                  );
+                                },
+                                child: const Text('Sign up'))
                           ],
                         )
                       ],

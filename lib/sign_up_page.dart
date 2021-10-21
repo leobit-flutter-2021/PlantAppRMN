@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
+import 'package:plant_app/sign_in_page.dart';
+
 
 class SignUpPage extends StatefulWidget {
   // const SignUpPage({Key? key, required this.title}) : super(key: key);
@@ -148,7 +150,14 @@ class _SignUpPageState extends State<SignUpPage> {
                     const Text("Already have an account?"),
                     TextButton(
                       child: const Text("Login"),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) {
+                            return const SignInPage();
+                          }),
+                        );
+                      },
                     )
                   ])
                 ],
@@ -160,7 +169,9 @@ class _SignUpPageState extends State<SignUpPage> {
 
   Widget _renderTextField(IconData icon, String hintText) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 10,),
+      padding: EdgeInsets.symmetric(
+        vertical: 10,
+      ),
       child: TextField(
         decoration: InputDecoration(
           prefixIcon: Icon(icon),

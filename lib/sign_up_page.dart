@@ -12,11 +12,6 @@ class _SignUpPageState extends State<SignUpPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-<<<<<<< HEAD
-      appBar: AppBar(),
-      body: const Center(
-        child: Text('Sign Up Page'),
-=======
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
         leading: Padding(
@@ -170,7 +165,6 @@ class _SignUpPageState extends State<SignUpPage> {
                   width: 0, style: BorderStyle.none)),
           labelText: hintText,
         ),
->>>>>>> origin/signup_page
       ),
     );
   }
